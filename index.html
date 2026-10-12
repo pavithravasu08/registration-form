@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <header class="form-header">
+            <h2>REGISTRATION FORM</h2>
+            <p>Fill out the form carefully for Registration</p>
+        </header>
+
+        <form id="registrationForm">
+
+            <!--STUDENT NAME-->
+            <div class="form-group full-width">
+                <label>Student Name</label>
+                <div class="name-fields">
+                    <div>
+                        <input type="text" id="firstName" name="firstName" placeholder="Enter your First name">
+                        <small>First Name</small>
+                    </div>
+                    <div>
+                        <input type="text" id="lastName" name="lastName" placeholder="Enter your Last name">
+                        <small>Last Name</small>
+                    </div>
+
+                </div>
+                <div id="nameError" class="error"></div>
+
+            </div>
+
+            <!--Gender Selection-->
+            <div class="form-group">
+                <label for="gender">Gender</label>
+
+                <select id="gender" name="gender">
+                    <option value="">Please Select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+                    <option value="Prefer Not to Say">Prefer Not to Say</option>
+                </select>
+                <div id="genderError" class="error"></div>
+            </div>
+
+            <!--Email-->
+            <div class="form-group">
+                <label for="email">Student E-mail</label>
+                <input type="email" id="email" name="email" placeholder="ex: myname@example.com">
+
+                <small>example@example.com</small>
+                <div class="error" id="emailError"></div>
+            </div>
+
+            <!--STUDENT ID-->
+            <div class="form-group">
+                <label for="studentId">Student ID</label>
+                <input type="text" id="studentId" name="studentId">
+
+                <div id="idError" class="error"></div>
+            </div>
+
+            <!--Course-->
+            <div class="form-group">
+                <label for="courseName">List of Courses</label>
+
+                <select id="courseName" name="courseName">
+                    <option value="">Please Select</option>
+                    <option value="CSE">CSE</option>
+                    <option value="IT">IT</option>
+                    <option value="ECE">ECE</option>
+                    <option value="EEE">EEE</option>
+                    <option value="MECH">MECH</option>
+                    <option value="CIVIL">CIVIL</option>
+                </select>
+
+                <span class="error" id="courseError"></span>
+            </div>
+
+            <!--SUBMIT-->
+
+            <div class="submit-container">
+                <button type="submit">REGISTER</button>
+            </div>
+
+            <p id="successMsg" class="success"></p>
+
+
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
