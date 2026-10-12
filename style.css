@@ -130,19 +130,13 @@ body{
     margin-top: 12px;
 }
 .submit-container button:disabled {
-    width: 180px;
-    height: 48px;
-    background-color: #16bd5a;
-    border: none;
-    border-radius: 3px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+     background-color: #bdbdbd;
+    cursor: not-allowed;
+    opacity: 0.8;
 }
 
-.submit-container button:hover{
-    background-color: #0fa34b;
+.submit-container button:disabled:hover{
+    background-color: #bdbdbd;
 }
 
 /*MOBILE Responsive design*/
