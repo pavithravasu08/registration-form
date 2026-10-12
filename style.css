@@ -129,7 +129,7 @@ body{
     justify-content: center;
     margin-top: 12px;
 }
-.submit-container button{
+.submit-container button:disabled {
     width: 180px;
     height: 48px;
     background-color: #16bd5a;

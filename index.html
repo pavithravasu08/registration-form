@@ -58,12 +58,15 @@
                 <div class="error" id="emailError"></div>
             </div>
 
-            <!--STUDENT ID-->
+            <!-- Contact Number -->
             <div class="form-group">
-                <label for="studentId">Student ID</label>
-                <input type="text" id="studentId" name="studentId">
+                <label for="contact">Contact Number</label>
 
-                <div id="idError" class="error"></div>
+                <input type="tel" id="contact" name="contact" placeholder="Enter 10-digit number" maxlength="10"
+                    inputmode="numeric">
+
+                <small>Enter your 10-digit mobile number</small>
+                <div class="error" id="contactError"></div>
             </div>
 
             <!--Course-->
@@ -82,6 +85,26 @@
 
                 <span class="error" id="courseError"></span>
             </div>
+
+            <!--STUDENT ID-->
+            <div class="form-group">
+                <label for="studentId">Student ID</label>
+                <input type="text" id="studentId" name="studentId">
+
+                <div id="idError" class="error"></div>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">Password</label>
+
+                <input type="password" id="password" name="password" placeholder="Enter at least 6 characters">
+
+                <small>Minimum 6 characters</small>
+                <div class="error" id="passwordError"></div>
+            </div>
+
+
 
             <!--SUBMIT-->
 
